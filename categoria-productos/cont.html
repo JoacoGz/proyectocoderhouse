@@ -6,7 +6,7 @@
     <title>CONTACTO</title>
     <link rel="shortcut icon" weight="1000px" href="../IMG/shortcut.png"/>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' href='../estilos.css' media='screen'>
+    <link rel='stylesheet' type='text/css' href='../CSS/estilos.css' media='screen'>
     <script src='main.js'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,19 +19,23 @@
 <body class="contenedor-cont">
     <!--COMIENZO DE MENU-->
     <header class="header">
+        <a class="menu-logo">
+            <img src="../IMG/shortcut.png" class="logo-high" width="150px" alt="logotienda">
+        </a>
+        <label for="check" class="checkbtn" id="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav class="menu">
-            <a class="menu-logo">
-                <img src="../IMG/shortcut.png" class="logo-high" width="150px" alt="logotienda">
-            </a>
-            <button type="button" class="cart-shop">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </button>
+            <input type="checkbox" id="check" class="check">
             <ul class="elem-prod">
                 <li><a href="../index.html" target="" rel="noopener noreferrer">INICIO</a></li>
-                <li><a href="indu.html" rel="noopener noreferrer"> INDUMENTARIA </a></li>
-                <li><a href="acce.html" rel="noopener noreferrer"> ACCESORIOS </a></li>
-                <li><a href="zapa.html" rel="noopener noreferrer"> ZAPATILLAS </a></li>
-                <li><a href="cont.html" rel="noopener noreferrer"> CONTACTO </a></li>
+                <li><a href="indu.html"  rel="noopener noreferrer"> INDUMENTARIA </a></li>
+                <li><a href="acce.html"  rel="noopener noreferrer"> ACCESORIOS </a></li>
+                <li><a href="zapa.html"  rel="noopener noreferrer"> ZAPATILLAS </a></li>
+                <li><a href="cont.html"  rel="noopener noreferrer"> CONTACTO </a></li>
+                <button type="button" class="cart-shop">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
             </ul>
         </nav>
     </header>
@@ -73,5 +77,7 @@
         </div>
     </footer>
     <!--FIN DEL PIE DE PAGINA-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

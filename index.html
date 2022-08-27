@@ -6,7 +6,7 @@
     <title>NBA-ARG</title>
     <link rel="shortcut icon" weight="1000px" href="IMG/shortcut.png"/>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' href='estilos.css' media='screen'>
+    <link rel='stylesheet' type='text/css' href='/CSS/estilos.css' media='screen'>
     <script src='main.js'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,19 +22,20 @@
         <a class="menu-logo">
             <img src="IMG/shortcut.png" class="logo-high" width="150px" alt="logotienda">
         </a>
-        <label for="check" class="checkbtn">
+        <label for="check" class="checkbtn" id="checkbtn">
             <i class="fa-solid fa-bars"></i>
         </label>
         <nav class="menu">
-            <button type="button" class="cart-shop">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </button>
+            <input type="checkbox" id="check" class="check">
             <ul class="elem-prod">
                 <li><a href="index.html" target="" rel="noopener noreferrer">INICIO</a></li>
                 <li><a href="categoria-productos/indu.html"  rel="noopener noreferrer"> INDUMENTARIA </a></li>
                 <li><a href="categoria-productos/acce.html"  rel="noopener noreferrer"> ACCESORIOS </a></li>
                 <li><a href="categoria-productos/zapa.html"  rel="noopener noreferrer"> ZAPATILLAS </a></li>
                 <li><a href="categoria-productos/cont.html"  rel="noopener noreferrer"> CONTACTO </a></li>
+                <button type="button" class="cart-shop">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
             </ul>
         </nav>
     </header>
@@ -65,6 +66,7 @@
             <h2 class="articulo2-titulo">
              LOS MEJORES ACCESORIOS
             </h2>
+            <input type="checkbox" id="check" class="check">
             <h4 class="articulo2-texto">
                 LOS MEJORES ACCESORIOS PARA TRIUNFAR
             </h4>
