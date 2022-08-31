@@ -1,0 +1,659 @@
+@charset "UTF-8";
+/*                                         ESTILO PARA TODA LA PAGINA                             */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/*                                                MEDIA QUERIES                              */
+/*                                                COMIENZO INDEX                                   */
+.contenedor {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 1580px 118px;
+}
+
+/*                                            ESTILO PARA EL MENU/HEADER                            */
+.header {
+  grid-area: header;
+  background-color: black;
+}
+.header .checkbtn {
+  display: none;
+  color: white;
+  float: right;
+  font-size: 25px;
+  cursor: pointer;
+  line-height: 80px;
+  margin-right: 40px;
+}
+.header .logo-high {
+  position: absolute;
+  padding-left: 5rem;
+}
+.header #check {
+  display: none;
+}
+.header ul {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: 0;
+  padding-left: 400px;
+}
+.header ul li {
+  display: inline-block;
+  padding: 40px 30px;
+}
+.header ul li a {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+  color: white;
+  display: inline-block;
+}
+.header ul li a:hover {
+  color: #7c0087;
+}
+.header ul .cart-shop {
+  color: white;
+  float: right;
+  border: none;
+  background: none;
+  width: 100px;
+  height: 110px;
+  font-size: 17px;
+  margin-right: 30px;
+}
+.header ul .cart-shop:hover {
+  color: #7c0087;
+  cursor: pointer;
+}
+.header ul .cart-shop:active {
+  transition-property: font-size;
+  font-size: 14px;
+}
+
+/*                                            COMIENZO DEL MAIN                                     */
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  margin: 0;
+}
+
+.intro {
+  padding: 40px;
+  text-align: center;
+  -webkit-animation: titleanim;
+          animation: titleanim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes titleanim {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 2;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes titleanim {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 2;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.intro-titulo {
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.intro-texto {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/*                                            ARTICULO1                                */
+.articulo1 {
+  width: 895px;
+  padding: 150px;
+  text-align: center;
+  background-image: url(../IMG/curry_to1skzoc6hpt1vcgp3jssblii.jpg);
+  transition: 0.9s;
+  background-position: 20% 5%;
+}
+
+.articulo1:hover {
+  transform: scale(1.03);
+}
+
+.articulo1-titulo {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.articulo1-texto {
+  color: white;
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.articulo1-boton {
+  display: inline-block;
+  border: 2px solid;
+  padding: 5px;
+  color: white;
+}
+
+.boton-articulo1 {
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+}
+
+/*                                            ARTICULO 2                                     */
+.articulo2 {
+  padding: 150px;
+  text-align: center;
+  background-image: url(..//IMG/le-panier-a-trois-points-XXL-de-Luka-Doncic.jpg);
+  transition: 0.9s;
+  margin-top: 40px;
+  background-position: 50% 25%;
+}
+
+.articulo2:hover {
+  transform: scale(1.03);
+}
+
+.articulo2-titulo {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 40px;
+  color: white;
+  text-align: right;
+}
+
+.articulo2-texto {
+  color: white;
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+  padding-left: 520px;
+}
+
+.articulo2-boton {
+  position: relative;
+  left: 270px;
+  display: inline-block;
+  border: 2px solid;
+  padding: 5px;
+  color: white;
+  margin: 10px;
+}
+
+.boton-articulo2 {
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+}
+
+/*                                            ARTICULO 3                                 */
+.articulo3 {
+  width: 895px;
+  padding: 150px;
+  text-align: center;
+  background-image: url(../IMG/966879.jpg);
+  transition: 0.9s;
+  margin-top: 40px;
+  background-size: 2000px;
+  background-position: 40% 10%;
+}
+
+.articulo3:hover {
+  transform: scale(1.03);
+}
+
+.articulo3-titulo {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 40px;
+  color: white;
+  text-align: left;
+}
+
+.articulo3-texto {
+  color: white;
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+  padding-right: 540px;
+}
+
+.articulo3-boton {
+  position: relative;
+  right: 270px;
+  display: inline-block;
+  border: 2px solid;
+  padding: 5px;
+  color: white;
+  margin: 10px;
+}
+
+.boton-articulo3 {
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+}
+
+/*                                            COMIENZO DEL FOOTER                                    */
+.footer {
+  grid-area: footer;
+  background: #000308;
+}
+
+.footer-index {
+  grid-area: footer;
+  background: #000308;
+}
+
+.footer-insta {
+  float: right;
+  color: white;
+  border: none;
+  background: none;
+  font-size: 20px;
+  padding-right: 10px;
+  padding-top: 50px;
+}
+
+.footer-face {
+  color: white;
+  border: none;
+  background: none;
+  float: right;
+  font-size: 18px;
+  padding-right: 50px;
+  padding-top: 50px;
+}
+
+.footer-logo {
+  width: 150px;
+  padding-left: 600px;
+}
+
+/*                                               FIN DEL INDEX                                         */
+/*                                       COMIENZO PAGINA INDUMENTARIA                                   */
+.contenedor-indu {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 800px;
+}
+
+.articulo1-indu {
+  padding: 100px;
+  text-align: center;
+  background-image: url(../IMG/curry_to1skzoc6hpt1vcgp3jssblii.jpg);
+  background-position: 7% 8%;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/*                                         FIN PAGINA INDUMENTARIA                                       */
+/*                                       COMIENZO PAGINA ACCESORIOS                                       */
+.articulo2-acce {
+  padding: 100px;
+  text-align: center;
+  background-image: url(../IMG/le-panier-a-trois-points-XXL-de-Luka-Doncic.jpg);
+  background-position: 70% 25%;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/*                                         FIN PAGINA ACCESORIOS                                           */
+/*                                      COMIENZO PAGINA ZAPATILLAS                                          */
+.articulo3-zapa {
+  padding: 100px;
+  text-align: center;
+  background-image: url(../IMG/966879.jpg);
+  background-size: 2000px;
+  background-position: 40% 10%;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/*                                         FIN PAGINA ZAPATILLAS                                         */
+/*                                         COMIENZO PAGINA CONTACTO                                        */
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.form {
+  width: 400px;
+  margin-top: 30px;
+}
+
+.nombre {
+  font-size: 20px;
+}
+
+.nombre1 {
+  width: 200px;
+}
+
+.email {
+  font-size: 20px;
+}
+
+.email1 {
+  width: 200px;
+}
+
+.consulta {
+  font-size: 30px;
+}
+
+.consulta-1 {
+  width: 300px;
+  height: 150px;
+}
+
+.boton {
+  background-color: black;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 30px;
+}
+
+.footer-contacto {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/*                                         COMIENZO ESTILO PRODUCTOS                                        */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(6, 250px);
+  -moz-column-gap: 92px;
+       column-gap: 92px;
+}
+
+.producto {
+  margin-left: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  transition: 1s;
+}
+
+.producto:hover {
+  transform: scale(1.08);
+}
+
+.producto img {
+  border-radius: 5px;
+  width: 250px;
+  padding: 5px;
+  border: 1px double;
+}
+
+.producto img:hover {
+  border: 2px double;
+}
+
+.boton-compra {
+  background: none;
+  border: none;
+  border: 1px solid;
+  margin-top: 5px;
+  background-color: #000308;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.texto-compra {
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+}
+
+/*                                         FIN ESTILO PRODUCTOS                                        */
+/*                                         COMIENZO DISEÑO RESPONSIVE                                      */
+@media screen and (max-width: 1240px) {
+  .contenedor {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 1290px 118px;
+  }
+  .articulo {
+    padding: 100px;
+  }
+  .articulo1 {
+    background-size: 1400px;
+    background-position: 1% 5%;
+  }
+  .articulo2 {
+    background-size: 1400px;
+    background-position: 80% 30%;
+  }
+  .articulo3 {
+    background-size: 1500px;
+    background-position: 20% 10%;
+  }
+  li a {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+  }
+  ul {
+    padding-left: 230px;
+  }
+  .cart-shop {
+    padding-left: 70px;
+  }
+  .contenedor-indu {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 1000px 100px;
+  }
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(6, 195px);
+    -moz-column-gap: 92px;
+         column-gap: 92px;
+    margin-bottom: 100px;
+  }
+  .producto {
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Fira Sans", sans-serif;
+    transition: 1s;
+  }
+  .footer {
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .articulos {
+    background-size: 1300px;
+  }
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(4, 190px);
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    margin-bottom: 50px;
+  }
+  .producto img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .intro {
+    -webkit-animation: none;
+            animation: none;
+  }
+  ul {
+    flex-direction: column;
+    background-color: #2c3e50;
+    position: absolute;
+    top: 80px;
+    height: 540px;
+    width: 72.8%;
+    text-align: center;
+    transition: all 1s;
+    left: -120%;
+  }
+  nav ul li {
+    display: block;
+    margin: 1px;
+    line-height: 10px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  .contenedor-cont {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 490px 100px;
+  }
+  .contenedor {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 950px 100px;
+  }
+  .contenedor-indu {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1100px 100px;
+  }
+  .logo-high {
+    position: absolute;
+    padding-left: 3rem;
+    width: 120px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  .check:checked ~ ul {
+    left: 0;
+  }
+  .main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    margin: 0;
+  }
+  .intro-titulo {
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .articulo {
+    padding: 60px;
+  }
+  .articulo1 {
+    background-size: 1100px;
+    background-position: 20% 2%;
+    width: 550px;
+  }
+  .articulo1-titulo {
+    font-size: 30px;
+  }
+  .articulo1-texto {
+    font-size: 15px;
+  }
+  .articulo2 {
+    background-size: 900px;
+    background-position: 80% 30%;
+    padding: 50px;
+    width: 570px;
+  }
+  .articulo2-titulo {
+    font-size: 30px;
+  }
+  .articulo2-texto {
+    font-size: 15px;
+    padding-left: 370px;
+  }
+  .articulo2-boton {
+    left: 180px;
+  }
+  .articulo3 {
+    background-size: 900px;
+    background-position: 20% 10%;
+    width: 550px;
+  }
+  .articulo3-titulo {
+    font-size: 30px;
+  }
+  .articulo3-texto {
+    font-size: 15px;
+    padding-right: 350px;
+  }
+  .articulo3-boton {
+    right: 180px;
+  }
+  .footer-logo {
+    width: 150px;
+    padding-left: 50px;
+  }
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    -moz-column-gap: 70px;
+         column-gap: 70px;
+    margin-bottom: 50px;
+  }
+  .producto img {
+    width: 220px;
+  }
+  .articulo1-indu {
+    background-size: 1100px;
+    background-position: 2% 5%;
+  }
+  .articulo2-acce {
+    background-size: 1100px;
+    background-position: 80% 30%;
+  }
+  .articulo3-zapa {
+    background-size: 1100px;
+  }
+}/*# sourceMappingURL=styles.css.map */
