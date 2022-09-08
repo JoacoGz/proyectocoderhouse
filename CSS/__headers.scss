@@ -1,0 +1,58 @@
+.header{
+    grid-area: header;
+    background-color: black;
+    .checkbtn{
+        display: none;
+        color: #ffff;
+        float: right;
+        font-size: 25px;
+        cursor: pointer;
+        line-height: 80px;
+        margin-right: 40px;
+    }
+    .logo-high{
+        position: absolute;
+        padding-left: 5rem;
+    }
+    #check{
+        display: none;
+    }
+    ul{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        margin: 0;
+        padding-left: 400px;
+        li{
+            display: inline-block;
+            padding: 40px 30px;
+            a{
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 1rem;
+                color: #ffff;
+                display: inline-block;
+                &:hover{
+                    color: #7c0087;
+                }
+            }
+        }
+        .cart-shop{
+            color: #ffff;
+            float: right;
+            border: none;
+            background: none;
+            width: 100px;
+            height: 110px;
+            font-size: 17px;
+            margin-right: 30px;
+            &:hover{
+                color: #7c0087;
+                cursor: pointer;
+            }
+            &:active{
+                transition-property: font-size;
+                font-size: 14px;
+            }
+        }
+    }
+}

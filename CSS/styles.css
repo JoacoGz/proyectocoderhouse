@@ -1,13 +1,10 @@
 @charset "UTF-8";
-/*                                         ESTILO PARA TODA LA PAGINA                             */
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
 }
 
-/*                                                MEDIA QUERIES                              */
-/*                                                COMIENZO INDEX                                   */
 .contenedor {
   display: grid;
   grid-template-areas: "header" "main" "footer";
@@ -15,7 +12,6 @@
   grid-template-rows: 100px 1580px 118px;
 }
 
-/*                                            ESTILO PARA EL MENU/HEADER                            */
 .header {
   grid-area: header;
   background-color: black;
@@ -135,20 +131,20 @@
 }
 
 /*                                            ARTICULO1                                */
-.articulo1 {
+.articulo--1 {
+  background-image: url(../IMG/curry_to1skzoc6hpt1vcgp3jssblii.jpg);
   width: 895px;
   padding: 150px;
   text-align: center;
-  background-image: url(../IMG/curry_to1skzoc6hpt1vcgp3jssblii.jpg);
   transition: 0.9s;
   background-position: 20% 5%;
 }
 
-.articulo1:hover {
+.articulo--1:hover {
   transform: scale(1.03);
 }
 
-.articulo1-titulo {
+.articulo1-titulo, .articulo3-titulo, .articulo2-titulo {
   font-family: "Fira Sans", sans-serif;
   font-size: 40px;
   color: white;
@@ -173,23 +169,20 @@
 }
 
 /*                                            ARTICULO 2                                     */
-.articulo2 {
+.articulo--2 {
+  background-image: url(../IMG/le-panier-a-trois-points-XXL-de-Luka-Doncic.jpg);
   padding: 150px;
   text-align: center;
-  background-image: url(..//IMG/le-panier-a-trois-points-XXL-de-Luka-Doncic.jpg);
   transition: 0.9s;
   margin-top: 40px;
   background-position: 50% 25%;
 }
 
-.articulo2:hover {
+.articulo--2:hover {
   transform: scale(1.03);
 }
 
 .articulo2-titulo {
-  font-family: "Fira Sans", sans-serif;
-  font-size: 40px;
-  color: white;
   text-align: right;
 }
 
@@ -216,7 +209,7 @@
 }
 
 /*                                            ARTICULO 3                                 */
-.articulo3 {
+.articulo--3 {
   width: 895px;
   padding: 150px;
   text-align: center;
@@ -227,14 +220,11 @@
   background-position: 40% 10%;
 }
 
-.articulo3:hover {
+.articulo--3:hover {
   transform: scale(1.03);
 }
 
 .articulo3-titulo {
-  font-family: "Fira Sans", sans-serif;
-  font-size: 40px;
-  color: white;
   text-align: left;
 }
 
@@ -594,7 +584,7 @@
     background-position: 20% 2%;
     width: 550px;
   }
-  .articulo1-titulo {
+  .articulo1-titulo, .articulo2-titulo, .articulo3-titulo {
     font-size: 30px;
   }
   .articulo1-texto {
