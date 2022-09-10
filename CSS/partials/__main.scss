@@ -1,0 +1,133 @@
+@import "./_animaciones";
+@import "./_maps";
+@import "./_mixin";
+
+.main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    margin: 0;
+    .intro{
+        padding: 40px;
+        text-align: center;
+        animation: titleanim;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        .intro-titulo{
+            font-family: 'Anton', sans-serif;
+            font-size: 40px;
+            letter-spacing: 1px;
+        }
+        .intro-texto{
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 0.5px;
+        }
+    }
+    .articulo--1{
+        background-image: url(../IMG/curry_to1skzoc6hpt1vcgp3jssblii.jpg);
+        width: 895px;
+        padding: 150px;
+        text-align: map-get($articulos, centro );
+        transition: 0.9s;
+        background-position: 20% 5%;
+        &:hover{
+            transform: scale(1.03);
+        }
+        .articulo1-titulo{
+            @include titulos;
+        }
+        .articulo1-texto{
+            color: #ffff;
+            font-size: 20px;
+            font-family: 'Fira Sans', sans-serif;
+        }
+        .articulo1-boton{
+            display: inline-block;
+            color: #ffff;
+            border: 2px solid ;
+            padding: 5px;
+            .boton-articulo1{
+                color:#ffff;
+                font-family: 'Fira Sans', sans-serif;
+            }
+        }
+    }
+    .articulo--2{
+        background-image: url(../IMG/le-panier-a-trois-points-XXL-de-Luka-Doncic.jpg);
+        padding: 150px;
+        text-align: center;
+        transition: 0.9s;
+        margin-top: 40px;
+        background-position: 50% 25%;
+        &:hover{
+            transform: scale(1.03);
+        }
+        .articulo2-titulo{
+            @include titulos;
+            text-align: right;
+        }
+        .articulo2-texto{
+            color: #ffff;
+            font-size: 20px;
+            font-family: 'Fira Sans', sans-serif;
+            padding-left: 520px;
+        }
+        .articulo2-boton{
+            position: relative;
+            left: 270px;
+            display: inline-block;
+            border: 2px solid ;
+            padding: 5px;
+            color: #ffff;
+            margin:10px;
+            .boton-articulo2{
+                color:#ffff;
+                font-family: 'Fira Sans', sans-serif;
+            }
+        }
+    }
+    .articulo--3{
+        width: 895px;
+        padding: 150px;
+        text-align: center;
+        background-image:url(../IMG/966879.jpg);
+        transition: 0.9s;
+        margin-top: 40px;
+        background-size: 2000px;
+        background-position: 40% 10%;
+        &:hover{
+            transform: scale(1.03);
+        }
+        .articulo3-titulo{
+            @include titulos;
+            text-align: left;
+        }
+        .articulo3-texto{
+            color: #ffff;
+            font-size: 20px;
+            font-family: 'Fira Sans', sans-serif;
+            padding-right: 540px;
+        }
+        .articulo3-boton{
+            position:relative;
+            right: 270px;
+            display: inline-block;
+            border: 2px solid ;
+            padding: 5px;
+            color: #ffff;
+            margin:10px;
+            .boton-articulo3{
+                color:#ffff;
+                font-family: 'Fira Sans', sans-serif;
+            }
+        }
+    }
+}
+
+.boton-articulo3{
+    color:#ffff;
+    font-family: 'Fira Sans', sans-serif;
+}

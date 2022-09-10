@@ -1,0 +1,246 @@
+@media screen and (max-width: 1240px){
+    .contenedor{
+        display: grid;
+        grid-template-areas:"header"
+                             "main"
+                             "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 1290px 118px;
+        ul{
+            padding-left: 230px;
+            li a{
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 15px;
+                color: #ffff;
+                display: inline-block;
+            }
+            .cart-shop{
+                padding-left: 70px;
+            }
+        
+        }
+        .articulo{
+            padding: 100px;
+        }
+    
+        .articulo1{
+            background-size: 1400px;
+            background-position: 1% 5%;
+        }
+    
+        .articulo2{
+            background-size: 1400px;
+            background-position: 80% 30%;
+        }
+    
+        .articulo3{
+            background-size: 1500px;
+            background-position: 20% 10%;
+        }
+    }
+
+    .contenedor-indu{
+        display: grid;
+        grid-template-areas: "header"
+                             "main"
+                             "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 1000px 100px;
+        .productos{
+            display: grid;
+            grid-template-columns: repeat(6, 195px);
+            column-gap: 92px;
+            margin-bottom: 100px;
+            .producto{
+                margin-left: 30px ;
+                margin-top: 30px;
+                text-align: center;
+                font-family: 'Fira Sans', sans-serif;
+                transition: 1s;
+            }
+        }
+        .footer{
+            background-color: black;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+
+    .footer{
+        background-color: black;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .articulos{
+        background-size: 1300px;
+    }
+
+
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(4, 190px);
+        column-gap: 50px;
+        margin-bottom: 50px;
+        .producto img{
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 890px) {
+
+    .contenedor{
+        display: grid;
+        grid-template-areas:"header"
+                             "main"
+                             "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 80px 950px 100px;
+        header{
+            .logo-high{
+            position: absolute;
+            padding-left: 3rem;
+            width: 120px;
+            }
+            .checkbtn{
+                display: block;
+                &:checked ~ ul{
+                    left: 0;
+                }
+            }
+            nav ul{
+            flex-direction: column;
+            background-color: #2c3e50;
+            position: absolute;
+            top: 80px;
+            height: 540px;
+            width: 72.8%;
+            text-align: center;
+            transition: all 1s;
+            left: -120%;
+                li{
+                display: block;
+                margin: 1px;
+                line-height: 10px ;
+                    a{
+                    font-size: 20px;
+                    }
+                }  
+            }
+        }
+        .main{
+            grid-area: main;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            align-items: center;
+            margin: 0;
+            .intro{
+                animation: none;
+                .intro-titulo{
+                    font-family: 'Anton', sans-serif;
+                    font-size: 30px;
+                    letter-spacing: 1px;
+                }
+            }
+            .articulo{
+                padding: 60px;
+                .articulo--1{
+                    background-size: 1100px;
+                    background-position: 20% 2%;
+                    width: 550px;
+                    .articulo1-titulo{
+                        font-size: 30px;
+                    }
+                    .articulo1-texto{
+                        font-size: 15px;
+                    }
+                }
+                .articulo--2{
+                    background-size: 900px;
+                    background-position: 80% 30%;
+                    padding: 50px;
+                    width: 570px;
+                    .articulo2-titulo{
+                        font-size: 30px;
+                    }
+                    .articulo2-texto{
+                        font-size: 15px;
+                        padding-left: 370px;
+                    }
+                    .articulo2-boton{
+                        left: 180px;
+                    }
+                }
+                .articulo--3{
+                    background-size: 900px;
+                    background-position: 20% 10%;
+                    width: 550px;
+                    .articulo3-titulo{
+                        font-size: 30px;
+                    }
+                
+                    .articulo3-texto{
+                        font-size: 15px;
+                        padding-right: 350px;
+                    }
+                
+                    .articulo3-boton{
+                        right: 180px;
+                    }
+                }
+            }
+        }
+        footer{
+            .footer-logo{
+                width: 150px;
+                padding-left: 50px;
+            }
+        }
+    }
+
+    .contenedor-cont{
+        display: grid;
+        grid-template-areas:"header"
+                             "main"
+                             "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 80px 490px 100px;
+    }
+
+    .contenedor-indu{
+        display: grid;
+        grid-template-areas:"header"
+                             "main"
+                             "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 80px 1100px 100px;
+        main{
+            .articulo1-indu{
+                background-size: 1100px;
+                background-position: 2% 5%;
+            }
+        
+            .articulo2-acce{
+                background-size: 1100px;
+                background-position: 80% 30%;
+            }
+        
+            .articulo3-zapa{
+                background-size: 1100px;
+            }
+            .productos{
+                display: grid;
+                grid-template-columns: repeat(3, 200px);
+                column-gap: 70px;
+                margin-bottom: 50px;  
+                .producto img{
+                    width: 220px;
+                }
+            }
+        }
+    }
+}

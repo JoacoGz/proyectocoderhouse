@@ -1,0 +1,7 @@
+@import "./_mixin";
+
+.articulo2-acce{
+    @include portadas;
+    background-image: url(../IMG/le-panier-a-trois-points-XXL-de-Luka-Doncic.jpg);
+    background-position: 70% 25%;
+}

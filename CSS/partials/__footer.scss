@@ -1,0 +1,31 @@
+@import "./_mixin";
+
+footer{
+    grid-area: footer;
+    background:#000308;
+}
+
+.footer-index{
+    grid-area: footer;
+    background:#000308;
+    .footer-insta{
+        float: right;
+        color: #ffff;
+        border: none;
+        background: none;
+        @include botones(20px, 10px, 50px)
+    }
+}
+
+.footer-face{
+    color: #ffff;
+    border: none;
+    background: none;
+    float: right;
+    @include botones(18px, 50px, 50px)
+}
+
+.footer-logo{
+    width: 150px;
+    padding-left: 600px;
+}
