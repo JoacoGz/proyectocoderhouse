@@ -1,8 +1,14 @@
-@import "./_mixin";
+@import './_mixin';
 
 .articulo3-zapa{
     background-image: url(../IMG/966879.jpg);
     background-size: 2000px;
     background-position: 40% 10%;
     @include portadas;
+    .articulo3-titulo{
+        @include titulos;
+    }
+    .articulo3-texto{
+        @include textos;
+    }
 }

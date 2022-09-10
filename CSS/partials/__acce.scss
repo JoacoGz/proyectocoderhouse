@@ -4,4 +4,10 @@
     @include portadas;
     background-image: url(../IMG/le-panier-a-trois-points-XXL-de-Luka-Doncic.jpg);
     background-position: 70% 25%;
+    .articulo2-titulo{
+        @include titulos;
+    }
+    .articulo2-texto{
+        @include textos;
+    }
 }

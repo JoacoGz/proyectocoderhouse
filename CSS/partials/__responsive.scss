@@ -1,3 +1,6 @@
+@import "./_mixin";
+
+
 @media screen and (max-width: 1240px){
     .contenedor{
         display: grid;
@@ -17,7 +20,6 @@
             .cart-shop{
                 padding-left: 70px;
             }
-        
         }
         .articulo{
             padding: 100px;
@@ -46,6 +48,18 @@
                              "footer";
         grid-template-columns: 100%;
         grid-template-rows: 100px 1000px 100px;
+        ul{
+            padding-left: 230px;
+            li a{
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 15px;
+                color: #ffff;
+                display: inline-block;
+            }
+            .cart-shop{
+                padding-left: 70px;
+            }
+        }
         .productos{
             display: grid;
             grid-template-columns: repeat(6, 195px);
@@ -63,6 +77,21 @@
             background-color: black;
             bottom: 0;
             width: 100%;
+        }
+    }
+
+    .contenedor-cont{
+        ul{
+            padding-left: 230px;
+            li a{
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 15px;
+                color: #ffff;
+                display: inline-block;
+            }
+            .cart-shop{
+                padding-left: 70px;
+            }
         }
     }
 
@@ -98,7 +127,7 @@
                              "main"
                              "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 80px 950px 100px;
+        grid-template-rows: 80px 1050px 100px;
         header{
             .logo-high{
             position: absolute;
@@ -107,20 +136,21 @@
             }
             .checkbtn{
                 display: block;
-                &:checked ~ ul{
+            }
+            nav{
+                .check:checked ~ ul{
                     left: 0;
                 }
-            }
-            nav ul{
-            flex-direction: column;
-            background-color: #2c3e50;
-            position: absolute;
-            top: 80px;
-            height: 540px;
-            width: 72.8%;
-            text-align: center;
-            transition: all 1s;
-            left: -120%;
+                ul{
+                flex-direction: column;
+                background-color: #2c3e50;
+                position: absolute;
+                top: 80px;
+                height: 540px;
+                width: 75%;
+                text-align: center;
+                transition: all 1s;
+                left: -120%;
                 li{
                 display: block;
                 margin: 1px;
@@ -128,9 +158,10 @@
                     a{
                     font-size: 20px;
                     }
-                }  
+                }
             }
         }
+    }
         .main{
             grid-area: main;
             display: flex;
@@ -153,10 +184,10 @@
                     background-position: 20% 2%;
                     width: 550px;
                     .articulo1-titulo{
-                        font-size: 30px;
+                        @include art-tit;
                     }
                     .articulo1-texto{
-                        font-size: 15px;
+                        @include art-text;
                     }
                 }
                 .articulo--2{
@@ -165,10 +196,10 @@
                     padding: 50px;
                     width: 570px;
                     .articulo2-titulo{
-                        font-size: 30px;
+                        @include art-tit;
                     }
                     .articulo2-texto{
-                        font-size: 15px;
+                        @include art-text;
                         padding-left: 370px;
                     }
                     .articulo2-boton{
@@ -180,11 +211,11 @@
                     background-position: 20% 10%;
                     width: 550px;
                     .articulo3-titulo{
-                        font-size: 30px;
+                        @include art-tit;
                     }
                 
                     .articulo3-texto{
-                        font-size: 15px;
+                        @include art-text;
                         padding-right: 350px;
                     }
                 
@@ -208,7 +239,58 @@
                              "main"
                              "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 80px 490px 100px;
+        grid-template-rows: 80px 800px 100px;
+
+        header{
+            .logo-high{
+            position: absolute;
+            padding-left: 3rem;
+            width: 120px;
+            }
+            .checkbtn{
+                display: block;
+            }
+            nav{
+                .check:checked ~ ul{
+                    left: 0;
+                }
+                ul{
+                flex-direction: column;
+                background-color: #2c3e50;
+                position: absolute;
+                top: 80px;
+                height: 540px;
+                width: 75%;
+                text-align: center;
+                transition: all 1s;
+                left: -120%;
+                li{
+                display: block;
+                margin: 1px;
+                line-height: 10px ;
+                    a{
+                    font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+        .form{
+            flex-direction: column;
+            .mapa{
+                margin-left: 0;
+                padding-top: 50px;
+            }
+        }
+
+        .footer-contacto{
+            position: none;
+            .footer-logo{
+                width: 150px;
+                padding-left: 50px;
+            }
+        }
     }
 
     .contenedor-indu{
@@ -217,7 +299,43 @@
                              "main"
                              "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 80px 1100px 100px;
+        grid-template-rows: 80px 1150px 100px;
+        
+        header{
+            .logo-high{
+            position: absolute;
+            padding-left: 3rem;
+            width: 120px;
+            }
+            .checkbtn{
+                display: block;
+            }
+            nav{
+                .check:checked ~ ul{
+                    left: 0;
+                }
+                ul{
+                flex-direction: column;
+                background-color: #2c3e50;
+                position: absolute;
+                top: 80px;
+                height: 540px;
+                width: 75%;
+                text-align: center;
+                transition: all 1s;
+                left: -120%;
+                li{
+                display: block;
+                margin: 1px;
+                line-height: 10px ;
+                    a{
+                    font-size: 20px;
+                    }
+                }
+            }
+        }
+        }
+
         main{
             .articulo1-indu{
                 background-size: 1100px;
@@ -240,6 +358,13 @@
                 .producto img{
                     width: 220px;
                 }
+            }
+        }
+
+        footer{
+            .footer-logo{
+                width: 150px;
+                padding-left: 50px;
             }
         }
     }

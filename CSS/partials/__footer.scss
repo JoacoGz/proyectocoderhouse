@@ -8,13 +8,14 @@ footer{
 .footer-index{
     grid-area: footer;
     background:#000308;
-    .footer-insta{
-        float: right;
-        color: #ffff;
-        border: none;
-        background: none;
-        @include botones(20px, 10px, 50px)
-    }
+}
+
+.footer-insta{
+    float: right;
+    color: #ffff;
+    border: none;
+    background: none;
+    @include botones(20px, 10px, 50px)
 }
 
 .footer-face{

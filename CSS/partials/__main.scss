@@ -5,6 +5,7 @@
 .main{
     grid-area: main;
     display: flex;
+    align-content: center;
     flex-direction: column;
     overflow: hidden;
     align-items: center;
@@ -40,9 +41,7 @@
             @include titulos;
         }
         .articulo1-texto{
-            color: #ffff;
-            font-size: 20px;
-            font-family: 'Fira Sans', sans-serif;
+            @include textos;
         }
         .articulo1-boton{
             display: inline-block;

@@ -1,11 +1,14 @@
 .formulario{
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0;
     text-align: center;
+    align-items: center;
+    align-content: center;
     font-family: 'Fira Sans', sans-serif;
     .form{
+        padding-left: 300px;
+        display: flex;
+        flex-direction: row;
         width: 400px;
         margin-top: 30px;
         .nombre{
@@ -33,13 +36,9 @@
             font-family: 'Fira Sans', sans-serif;
             font-size: 30px;
         }
+        .mapa{
+            margin-left: 200px;
+            border: 1px solid black;
+        }
     }
-}
-
-.footer-contacto{
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin-top: 30px;
 }

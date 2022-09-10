@@ -17,3 +17,17 @@
     font-size: 40px;
     font-family: 'Fira Sans', sans-serif;
 }
+
+@mixin textos {
+    color: #ffff;
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+@mixin art-tit{
+    font-size: 30px;
+}
+
+@mixin art-text{
+    font-size: 15px;
+}

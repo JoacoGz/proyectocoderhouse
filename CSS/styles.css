@@ -98,6 +98,7 @@
 .main {
   grid-area: main;
   display: flex;
+  align-content: center;
   flex-direction: column;
   overflow: hidden;
   align-items: center;
@@ -244,7 +245,8 @@ footer {
   grid-area: footer;
   background: #000308;
 }
-.footer-index .footer-insta {
+
+.footer-insta {
   float: right;
   color: white;
   border: none;
@@ -285,6 +287,16 @@ footer {
   margin-left: 30px;
   margin-right: 30px;
 }
+.articulo1-indu .articulo1-titulo {
+  color: white;
+  font-size: 40px;
+  font-family: "Fira Sans", sans-serif;
+}
+.articulo1-indu .articulo1-texto {
+  color: white;
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+}
 
 .productos {
   display: grid;
@@ -302,13 +314,13 @@ footer {
 .productos .producto:hover {
   transform: scale(1.08);
 }
-.productos .producto .producto img {
+.productos .producto img {
   border-radius: 5px;
   width: 250px;
   padding: 5px;
   border: 1px double;
 }
-.productos .producto .producto img:hover {
+.productos .producto img:hover {
   border: 2px double;
 }
 .productos .producto .boton-compra {
@@ -335,16 +347,29 @@ footer {
   background-image: url(../IMG/le-panier-a-trois-points-XXL-de-Luka-Doncic.jpg);
   background-position: 70% 25%;
 }
+.articulo2-acce .articulo2-titulo {
+  color: white;
+  font-size: 40px;
+  font-family: "Fira Sans", sans-serif;
+}
+.articulo2-acce .articulo2-texto {
+  color: white;
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+}
 
 .formulario {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   text-align: center;
+  align-items: center;
+  align-content: center;
   font-family: "Fira Sans", sans-serif;
 }
 .formulario .form {
+  padding-left: 300px;
+  display: flex;
+  flex-direction: row;
   width: 400px;
   margin-top: 30px;
 }
@@ -373,13 +398,9 @@ footer {
   font-family: "Fira Sans", sans-serif;
   font-size: 30px;
 }
-
-.footer-contacto {
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin-top: 30px;
+.formulario .form .mapa {
+  margin-left: 200px;
+  border: 1px solid black;
 }
 
 @media screen and (max-width: 1240px) {
@@ -422,6 +443,18 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: 100px 1000px 100px;
   }
+  .contenedor-indu ul {
+    padding-left: 230px;
+  }
+  .contenedor-indu ul li a {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+  }
+  .contenedor-indu ul .cart-shop {
+    padding-left: 70px;
+  }
   .contenedor-indu .productos {
     display: grid;
     grid-template-columns: repeat(6, 195px);
@@ -440,6 +473,18 @@ footer {
     background-color: black;
     bottom: 0;
     width: 100%;
+  }
+  .contenedor-cont ul {
+    padding-left: 230px;
+  }
+  .contenedor-cont ul li a {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+  }
+  .contenedor-cont ul .cart-shop {
+    padding-left: 70px;
   }
   .footer {
     background-color: black;
@@ -467,7 +512,7 @@ footer {
     display: grid;
     grid-template-areas: "header" "main" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 80px 950px 100px;
+    grid-template-rows: 80px 1050px 100px;
   }
   .contenedor header .logo-high {
     position: absolute;
@@ -477,7 +522,7 @@ footer {
   .contenedor header .checkbtn {
     display: block;
   }
-  .contenedor header .checkbtn:checked ~ ul {
+  .contenedor header nav .check:checked ~ ul {
     left: 0;
   }
   .contenedor header nav ul {
@@ -486,7 +531,7 @@ footer {
     position: absolute;
     top: 80px;
     height: 540px;
-    width: 72.8%;
+    width: 75%;
     text-align: center;
     transition: all 1s;
     left: -120%;
@@ -569,13 +614,87 @@ footer {
     display: grid;
     grid-template-areas: "header" "main" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 80px 490px 100px;
+    grid-template-rows: 80px 800px 100px;
+  }
+  .contenedor-cont header .logo-high {
+    position: absolute;
+    padding-left: 3rem;
+    width: 120px;
+  }
+  .contenedor-cont header .checkbtn {
+    display: block;
+  }
+  .contenedor-cont header nav .check:checked ~ ul {
+    left: 0;
+  }
+  .contenedor-cont header nav ul {
+    flex-direction: column;
+    background-color: #2c3e50;
+    position: absolute;
+    top: 80px;
+    height: 540px;
+    width: 75%;
+    text-align: center;
+    transition: all 1s;
+    left: -120%;
+  }
+  .contenedor-cont header nav ul li {
+    display: block;
+    margin: 1px;
+    line-height: 10px;
+  }
+  .contenedor-cont header nav ul li a {
+    font-size: 20px;
+  }
+  .contenedor-cont .form {
+    flex-direction: column;
+  }
+  .contenedor-cont .form .mapa {
+    margin-left: 0;
+    padding-top: 50px;
+  }
+  .contenedor-cont .footer-contacto {
+    position: none;
+  }
+  .contenedor-cont .footer-contacto .footer-logo {
+    width: 150px;
+    padding-left: 50px;
   }
   .contenedor-indu {
     display: grid;
     grid-template-areas: "header" "main" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 80px 1100px 100px;
+    grid-template-rows: 80px 1150px 100px;
+  }
+  .contenedor-indu header .logo-high {
+    position: absolute;
+    padding-left: 3rem;
+    width: 120px;
+  }
+  .contenedor-indu header .checkbtn {
+    display: block;
+  }
+  .contenedor-indu header nav .check:checked ~ ul {
+    left: 0;
+  }
+  .contenedor-indu header nav ul {
+    flex-direction: column;
+    background-color: #2c3e50;
+    position: absolute;
+    top: 80px;
+    height: 540px;
+    width: 75%;
+    text-align: center;
+    transition: all 1s;
+    left: -120%;
+  }
+  .contenedor-indu header nav ul li {
+    display: block;
+    margin: 1px;
+    line-height: 10px;
+  }
+  .contenedor-indu header nav ul li a {
+    font-size: 20px;
   }
   .contenedor-indu main .articulo1-indu {
     background-size: 1100px;
@@ -598,4 +717,28 @@ footer {
   .contenedor-indu main .productos .producto img {
     width: 220px;
   }
+  .contenedor-indu footer .footer-logo {
+    width: 150px;
+    padding-left: 50px;
+  }
+}
+.articulo3-zapa {
+  background-image: url(../IMG/966879.jpg);
+  background-size: 2000px;
+  background-position: 40% 10%;
+  padding: 100px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.articulo3-zapa .articulo3-titulo {
+  color: white;
+  font-size: 40px;
+  font-family: "Fira Sans", sans-serif;
+}
+.articulo3-zapa .articulo3-texto {
+  color: white;
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
 }/*# sourceMappingURL=styles.css.map */
