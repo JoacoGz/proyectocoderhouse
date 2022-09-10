@@ -127,7 +127,9 @@
                              "main"
                              "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 80px 1050px 100px;
+        grid-template-rows: 80px 1000px 100px;
+
+        overflow-x: hidden;
         header{
             .logo-high{
             position: absolute;
@@ -147,7 +149,7 @@
                 position: absolute;
                 top: 80px;
                 height: 540px;
-                width: 75%;
+                width: 74%;
                 text-align: center;
                 transition: all 1s;
                 left: -120%;
@@ -177,52 +179,54 @@
                     letter-spacing: 1px;
                 }
             }
+
             .articulo{
                 padding: 60px;
-                .articulo--1{
-                    background-size: 1100px;
-                    background-position: 20% 2%;
-                    width: 550px;
-                    .articulo1-titulo{
-                        @include art-tit;
-                    }
-                    .articulo1-texto{
-                        @include art-text;
-                    }
+            }
+
+            .articulo--1{
+                background-size: 1000px;
+                background-position: 0% 2%;
+                width: 700px;
+                .articulo1-titulo{
+                    @include art-tit;
                 }
-                .articulo--2{
-                    background-size: 900px;
-                    background-position: 80% 30%;
-                    padding: 50px;
-                    width: 570px;
-                    .articulo2-titulo{
-                        @include art-tit;
-                    }
-                    .articulo2-texto{
-                        @include art-text;
-                        padding-left: 370px;
-                    }
-                    .articulo2-boton{
-                        left: 180px;
-                    }
+                .articulo1-texto{
+                    @include art-text;
                 }
-                .articulo--3{
-                    background-size: 900px;
-                    background-position: 20% 10%;
-                    width: 550px;
-                    .articulo3-titulo{
-                        @include art-tit;
-                    }
-                
-                    .articulo3-texto{
-                        @include art-text;
-                        padding-right: 350px;
-                    }
-                
-                    .articulo3-boton{
-                        right: 180px;
-                    }
+            }
+            .articulo--2{
+                background-size: 900px;
+                background-position: 80% 30%;
+                padding: 50px;
+                width: 720px;
+                padding-top: 90px;
+                .articulo2-titulo{
+                    @include art-tit;
                 }
+                .articulo2-texto{
+                    @include art-text;
+                    padding-left: 370px;
+                }
+                .articulo2-boton{
+                    left: 180px;
+                }
+            }
+            .articulo--3{
+                background-size: 900px;
+                background-position: 20% 10%;
+                width: 700px;
+                padding-top: 90px;
+                .articulo3-titulo{
+                    @include art-tit;
+                }
+                .articulo3-texto{
+                    @include art-text;
+                    padding-right: 350px;
+                }
+                .articulo3-boton{
+                    right: 180px;
+                } 
             }
         }
         footer{
@@ -240,6 +244,9 @@
                              "footer";
         grid-template-columns: 100%;
         grid-template-rows: 80px 800px 100px;
+
+        overflow-x: hidden;
+
 
         header{
             .logo-high{
@@ -260,7 +267,7 @@
                 position: absolute;
                 top: 80px;
                 height: 540px;
-                width: 75%;
+                width: 72.9%;
                 text-align: center;
                 transition: all 1s;
                 left: -120%;
@@ -301,6 +308,8 @@
         grid-template-columns: 100%;
         grid-template-rows: 80px 1150px 100px;
         
+        overflow-x: hidden;
+
         header{
             .logo-high{
             position: absolute;
@@ -320,7 +329,7 @@
                 position: absolute;
                 top: 80px;
                 height: 540px;
-                width: 75%;
+                width: 74%;
                 text-align: center;
                 transition: all 1s;
                 left: -120%;
@@ -353,7 +362,7 @@
             .productos{
                 display: grid;
                 grid-template-columns: repeat(3, 200px);
-                column-gap: 70px;
+                column-gap: 80px;
                 margin-bottom: 50px;  
                 .producto img{
                     width: 220px;
@@ -365,6 +374,91 @@
             .footer-logo{
                 width: 150px;
                 padding-left: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px){
+
+    .contenedor{
+        display: grid;
+        grid-template-areas:"header"
+                             "main"
+                             "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 80px 1050px 100px;
+
+        .main{
+            grid-area: main;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            align-items: center;
+            margin: 0;
+            .intro{
+                animation: none;
+                .intro-titulo{
+                    font-family: 'Anton', sans-serif;
+                    font-size: 30px;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .articulo{
+                padding: 60px;
+            }
+
+            .articulo--1{
+                background-size: 1000px;
+                background-position: 0% 2%;
+                width: 500px;
+            }
+            .articulo--2{
+                background-size: 900px;
+                background-position: 80% 30%;
+                padding: 50px;
+                width: 520px;
+                padding-top: 90px;
+            }
+            .articulo--3{
+                background-size: 900px;
+                background-position: 20% 10%;
+                width: 500px;
+                padding-top: 90px;
+            }
+        }
+    }
+
+    .contenedor-indu{
+        display: grid;
+        grid-template-areas:"header"
+                             "main"
+                             "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 80px 1200px 100px;
+        main{
+            .articulo1-indu{
+                background-size: 1050px;
+                background-position: 10% 1%;
+            }
+            .articulo2-acce{
+                background-size: 1000px;
+                background-position: 75% 30%;
+            }
+            .articulo3-zapa{
+                background-size: 1000px;
+                background-position: 40% 5%;
+            }
+            .productos{
+                display: grid;
+                grid-template-rows: 2;
+                grid-template-columns: repeat(2, 200px);
+                column-gap: 140px;
+                margin-bottom: 50px;  
+                .producto img{
+                    width: 220px;
+                }
             }
         }
     }

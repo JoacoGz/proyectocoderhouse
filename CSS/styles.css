@@ -512,7 +512,8 @@ footer {
     display: grid;
     grid-template-areas: "header" "main" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 80px 1050px 100px;
+    grid-template-rows: 80px 1000px 100px;
+    overflow-x: hidden;
   }
   .contenedor header .logo-high {
     position: absolute;
@@ -531,7 +532,7 @@ footer {
     position: absolute;
     top: 80px;
     height: 540px;
-    width: 75%;
+    width: 74%;
     text-align: center;
     transition: all 1s;
     left: -120%;
@@ -564,46 +565,48 @@ footer {
   .contenedor .main .articulo {
     padding: 60px;
   }
-  .contenedor .main .articulo .articulo--1 {
-    background-size: 1100px;
-    background-position: 20% 2%;
-    width: 550px;
+  .contenedor .main .articulo--1 {
+    background-size: 1000px;
+    background-position: 0% 2%;
+    width: 700px;
   }
-  .contenedor .main .articulo .articulo--1 .articulo1-titulo {
+  .contenedor .main .articulo--1 .articulo1-titulo {
     font-size: 30px;
   }
-  .contenedor .main .articulo .articulo--1 .articulo1-texto {
+  .contenedor .main .articulo--1 .articulo1-texto {
     font-size: 15px;
   }
-  .contenedor .main .articulo .articulo--2 {
+  .contenedor .main .articulo--2 {
     background-size: 900px;
     background-position: 80% 30%;
     padding: 50px;
-    width: 570px;
+    width: 720px;
+    padding-top: 90px;
   }
-  .contenedor .main .articulo .articulo--2 .articulo2-titulo {
+  .contenedor .main .articulo--2 .articulo2-titulo {
     font-size: 30px;
   }
-  .contenedor .main .articulo .articulo--2 .articulo2-texto {
+  .contenedor .main .articulo--2 .articulo2-texto {
     font-size: 15px;
     padding-left: 370px;
   }
-  .contenedor .main .articulo .articulo--2 .articulo2-boton {
+  .contenedor .main .articulo--2 .articulo2-boton {
     left: 180px;
   }
-  .contenedor .main .articulo .articulo--3 {
+  .contenedor .main .articulo--3 {
     background-size: 900px;
     background-position: 20% 10%;
-    width: 550px;
+    width: 700px;
+    padding-top: 90px;
   }
-  .contenedor .main .articulo .articulo--3 .articulo3-titulo {
+  .contenedor .main .articulo--3 .articulo3-titulo {
     font-size: 30px;
   }
-  .contenedor .main .articulo .articulo--3 .articulo3-texto {
+  .contenedor .main .articulo--3 .articulo3-texto {
     font-size: 15px;
     padding-right: 350px;
   }
-  .contenedor .main .articulo .articulo--3 .articulo3-boton {
+  .contenedor .main .articulo--3 .articulo3-boton {
     right: 180px;
   }
   .contenedor footer .footer-logo {
@@ -615,6 +618,7 @@ footer {
     grid-template-areas: "header" "main" "footer";
     grid-template-columns: 100%;
     grid-template-rows: 80px 800px 100px;
+    overflow-x: hidden;
   }
   .contenedor-cont header .logo-high {
     position: absolute;
@@ -633,7 +637,7 @@ footer {
     position: absolute;
     top: 80px;
     height: 540px;
-    width: 75%;
+    width: 72.9%;
     text-align: center;
     transition: all 1s;
     left: -120%;
@@ -665,6 +669,7 @@ footer {
     grid-template-areas: "header" "main" "footer";
     grid-template-columns: 100%;
     grid-template-rows: 80px 1150px 100px;
+    overflow-x: hidden;
   }
   .contenedor-indu header .logo-high {
     position: absolute;
@@ -683,7 +688,7 @@ footer {
     position: absolute;
     top: 80px;
     height: 540px;
-    width: 75%;
+    width: 74%;
     text-align: center;
     transition: all 1s;
     left: -120%;
@@ -710,8 +715,8 @@ footer {
   .contenedor-indu main .productos {
     display: grid;
     grid-template-columns: repeat(3, 200px);
-    -moz-column-gap: 70px;
-         column-gap: 70px;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
     margin-bottom: 50px;
   }
   .contenedor-indu main .productos .producto img {
@@ -720,6 +725,81 @@ footer {
   .contenedor-indu footer .footer-logo {
     width: 150px;
     padding-left: 50px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contenedor {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1050px 100px;
+  }
+  .contenedor .main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    margin: 0;
+  }
+  .contenedor .main .intro {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .contenedor .main .intro .intro-titulo {
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .contenedor .main .articulo {
+    padding: 60px;
+  }
+  .contenedor .main .articulo--1 {
+    background-size: 1000px;
+    background-position: 0% 2%;
+    width: 500px;
+  }
+  .contenedor .main .articulo--2 {
+    background-size: 900px;
+    background-position: 80% 30%;
+    padding: 50px;
+    width: 520px;
+    padding-top: 90px;
+  }
+  .contenedor .main .articulo--3 {
+    background-size: 900px;
+    background-position: 20% 10%;
+    width: 500px;
+    padding-top: 90px;
+  }
+  .contenedor-indu {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1200px 100px;
+  }
+  .contenedor-indu main .articulo1-indu {
+    background-size: 1050px;
+    background-position: 10% 1%;
+  }
+  .contenedor-indu main .articulo2-acce {
+    background-size: 1000px;
+    background-position: 75% 30%;
+  }
+  .contenedor-indu main .articulo3-zapa {
+    background-size: 1000px;
+    background-position: 40% 5%;
+  }
+  .contenedor-indu main .productos {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: repeat(2, 200px);
+    -moz-column-gap: 140px;
+         column-gap: 140px;
+    margin-bottom: 50px;
+  }
+  .contenedor-indu main .productos .producto img {
+    width: 220px;
   }
 }
 .articulo3-zapa {
